@@ -1,0 +1,114 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace; /* Change to match his exact slab font */
+}
+
+body {
+    background-image: url('background.jpg'); /* Place your blue snow texture image in the same folder named background.jpg */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    background: rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* Main Layout */
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    padding: 40px 5%;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.hero-text h3 {
+    font-size: 24px;
+    opacity: 0.8;
+}
+
+.music-embed {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background: #111111;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: auto;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    opacity: 0.6;
+}
+
+/* Responsive tweaks for mobile layout */
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 15px; }
+    .hero-container { flex-direction: column; text-align: center; gap: 40px; }
+    .hero-text h1 { font-size: 38px; }
+}
